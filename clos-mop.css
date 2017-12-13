@@ -50,13 +50,26 @@ td.star {
 }
 
 @media screen and (max-width: 55rem) {
-    table.wide-table tr{
+    table.wide-table tr {
         border-bottom: 0.5px solid #eee
     }
 }
 
 @media screen and (max-width: 35rem) {
-    table.wide-table tr{
-        border-bottom: 0.5px solid #ccc
+    table.wide-table tr {
+        border-bottom: 0.5px solid #ccc;
+        display: block;
+    }
+    table.wide-table td {
+        display: block;
+        margin-left: 3em;
+    }
+    table.wide-table td:nth-child(2) { margin-left: 1.5em; }
+    table.wide-table td:nth-child(3) { margin-left: 2.0em; }
+    table.wide-table td:nth-child(4) { margin-left: 2.5em; }
+    table.wide-table td:first-child,
+    table.wide-table.star-table td:nth-child(2) {
+        margin-left: 0;
+        display: inline-block;
     }
 }
